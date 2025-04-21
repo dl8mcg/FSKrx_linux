@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug FSKrx",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/FSKrx",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "GDB: Aktiviere automatische Druckausgabe",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "Build FSKrx",
+        "miDebuggerPath": "/usr/bin/gdb"
+      }
+    ]
+  }
